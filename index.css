@@ -32,6 +32,11 @@ header {
   gap: 2rem;
 }
 
+.primary-navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header-action .btn-link {
   padding: 0.6rem 2rem;
   border-radius: 0.25rem;
