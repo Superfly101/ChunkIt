@@ -21,6 +21,10 @@ body {
   clip-path: ellipse(120% 100% at 53.5% 0%);
 }
 
+.big-heading {
+  font-size: var(--fz-heading);
+}
+
 .top-section h1 {
   margin-block: 8rem 1rem;
   font-weight: 800;
@@ -63,4 +67,138 @@ body {
   top: 0;
   right: 2rem;
   fill: var(--pink);
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  /* width: 95%; */
+  /* margin: auto; */
+  background-color: #fff;
+}
+
+.contact-section div {
+  width: 100%;
+  max-width: 40rem;
+  /* padding-inline: 2rem; */
+  margin-block: 0.5rem;
+}
+
+.form-container {
+  background-color: #ffc3bd;
+  padding: 3rem 2rem;
+}
+
+.contact-section h2 {
+  font-size: var(--fz-heading);
+  color: var(--pink);
+}
+
+.form-container input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: inherit;
+  color: #232946;
+  border: 1px solid #232946;
+  border-radius: 4px;
+  outline: none;
+  overflow: hidden;
+}
+
+.form-container button {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 5rem;
+  font-family: inherit;
+}
+
+.contact-section img {
+  height: 1.2rem;
+  position: absolute;
+}
+
+.inline p {
+  margin-left: 1.5rem;
+}
+
+footer {
+  background-color: var(--color-main);
+  color: #fff;
+  min-height: 10rem;
+  padding-inline: 3rem;
+  padding-bottom: 1rem;
+}
+
+footer .logo {
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #fff;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer-second {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-second > div {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-second > p {
+  margin-block: 1rem;
+}
+
+.subscribe-field {
+  /* overflow: hidden; */
+  /* border-radius: 4px; */
+  position: relative;
+  margin-block: 1rem;
+}
+
+.subscribe-field input {
+  padding: 0.6rem 1rem;
+  outline: none;
+  font-family: inherit;
+  border-radius: 4px;
+  border: none;
+  width: 15rem;
+}
+
+.subscribe-field button {
+  padding: 0.6rem 0.8rem;
+  border-width: 0;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--pink);
+  position: absolute;
+  right: -1rem;
+  top: -0.5px;
+}
+
+.subscribe-field svg {
+  height: 1rem;
+  fill: #fff;
 }
