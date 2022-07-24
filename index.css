@@ -4,6 +4,7 @@
   --color-bg: #d6d2dc;
   --color-main: #301e4e;
   --color-btn: #ff6e6c;
+  --fz-heading: 40px;
 }
 
 * {
@@ -22,6 +23,12 @@ header {
   width: 100%;
   background-color: var(--color-bg);
   padding-inline: 2rem;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--color-main);
+  font-size: var(--fz-heading);
 }
 
 .primary-navigation {
@@ -56,8 +63,8 @@ header {
   border-radius: 0.25rem;
   margin-inline-end: 1.5rem;
   font-size: 0.9rem;
-  font-weight: 600;
-  border: 2px solid var(--color-main);
+  font-weight: 700;
+  border: 1px solid var(--color-main);
 }
 
 .header-action .primary {
