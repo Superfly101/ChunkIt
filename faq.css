@@ -17,6 +17,7 @@ body {
   align-items: center;
   min-height: 25rem;
   background-color: var(--color-main);
+  padding-inline: 2rem;
   color: #fff;
   clip-path: ellipse(120% 100% at 53.5% 0%);
 }
@@ -35,6 +36,15 @@ body {
   margin-top: -5rem;
   position: relative;
   margin-bottom: 8rem;
+}
+
+.question-container h3 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  /* font-size: 1rem; */
+}
+
+p {
+  font-size: 1rem;
 }
 
 .inner {
@@ -73,17 +83,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem;
-  gap: 2rem;
-  /* width: 95%; */
-  /* margin: auto; */
+  padding: 2rem;
+  gap: 1rem;
   background-color: #fff;
 }
 
 .contact-section div {
   width: 100%;
-  max-width: 40rem;
-  /* padding-inline: 2rem; */
+  max-width: 30rem;
   margin-block: 0.5rem;
 }
 
@@ -93,7 +100,7 @@ body {
 }
 
 .contact-section h2 {
-  font-size: var(--fz-heading);
+  font-size: clamp(16px, 4vw, --fz-heading);
   color: var(--pink);
 }
 
@@ -169,12 +176,11 @@ footer ul {
 }
 
 .footer-second > p {
-  margin-block: 1rem;
+  /* margin-block: 1rem; */
+  font-size: 0.8rem;
 }
 
 .subscribe-field {
-  /* overflow: hidden; */
-  /* border-radius: 4px; */
   position: relative;
   margin-block: 1rem;
 }
@@ -201,4 +207,10 @@ footer ul {
 .subscribe-field svg {
   height: 1rem;
   fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
 }
