@@ -176,15 +176,16 @@ footer ul {
   /* overflow: hidden; */
   /* border-radius: 4px; */
   position: relative;
-  display: flex;
-  align-items: center;
+  margin-block: 1rem;
 }
 
 .subscribe-field input {
   padding: 0.6rem 1rem;
   outline: none;
   font-family: inherit;
+  border-radius: 4px;
   border: none;
+  width: 15rem;
 }
 
 .subscribe-field button {
@@ -193,6 +194,8 @@ footer ul {
   border-radius: 0 4px 4px 0;
   background-color: var(--pink);
   position: absolute;
+  right: -1rem;
+  top: -0.5px;
 }
 
 .subscribe-field svg {
