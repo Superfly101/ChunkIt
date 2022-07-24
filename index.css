@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-bg: #d6d2dc;
+  --color-main: #301e4e;
+  --color-btn: #ff6e6c;
+  --fz-heading: 40px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,15 +15,25 @@
 
 body {
   min-height: 100vh;
+  font-family: "Manrope", sans-serif;
 }
 
 header {
-  color: #fff;
+  /* color: #fff; */
+  width: 100%;
+  background-color: var(--color-bg);
+  padding-inline: 2rem;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--color-main);
+  font-size: var(--fz-heading);
 }
 
 .primary-navigation {
-  min-height: 4rem;
-  background-color: blueviolet;
+  min-height: 5rem;
+
   display: flex;
   /* padding-inline: 2rem; */
   gap: 2rem;
@@ -23,13 +42,15 @@ header {
 }
 
 .primary-navigation div {
-  padding-inline: 2rem;
+  /* padding-inline: 2rem; */
+  text-align: center;
 }
 
 .primary-navigation ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  font-weight: 600;
 }
 
 .primary-navigation a {
@@ -38,15 +59,19 @@ header {
 }
 
 .header-action .btn-link {
-  padding: 0.6rem 2rem;
+  padding: 0.5rem 3rem;
   border-radius: 0.25rem;
+  margin-inline-end: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--color-main);
 }
 
 .header-action .primary {
-  border: 2px solid palevioletred;
-  margin-inline-end: 1.5rem;
+  color: var(--color-main);
 }
 
 .header-action .secondary {
-  background-color: palevioletred;
+  color: #fff;
+  background-color: var(--color-main);
 }
