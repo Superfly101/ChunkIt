@@ -35,22 +35,22 @@ header {
   min-height: 5rem;
 
   display: flex;
-  /* padding-inline: 2rem; */
-  gap: 2rem;
   align-items: center;
   justify-content: space-between;
 }
 
 .primary-navigation div {
-  /* padding-inline: 2rem; */
   text-align: center;
 }
 
-.primary-navigation ul {
+ul {
   list-style: none;
+  font-weight: 600;
+}
+
+.primary-navigation ul {
   display: flex;
   gap: 2rem;
-  font-weight: 600;
 }
 
 .primary-navigation a {
