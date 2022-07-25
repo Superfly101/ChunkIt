@@ -120,6 +120,11 @@ textarea {
   overflow: hidden;
 }
 
+.form-container input:focus,
+textarea:focus {
+  border: 2px solid var(--color-main);
+}
+
 .form-container button {
   background-color: #000;
   border: none;
