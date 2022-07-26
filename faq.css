@@ -10,6 +10,10 @@ body {
   font-weight: 600;
 }
 
+.logo {
+  font-size: clamp(20px, 5vw, 30px);
+}
+
 .top-section {
   position: relative;
   display: flex;
@@ -65,34 +69,61 @@ p {
 }
 
 .question {
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #737373;
   color: var(--pink);
   position: relative;
 }
 
-.answer {
-  margin-top: 1rem;
+.slide .question {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #737373;
 }
 
-.question svg {
+.answer {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+}
+
+.slide .answer {
+  margin-top: 1rem;
+  height: fit-content;
+}
+
+.question button {
+  border: none;
   width: 1rem;
   position: absolute;
-  top: 0;
-  right: 2rem;
+  top: 0.5rem;
+  right: 1rem;
   fill: var(--pink);
+}
+
+button img {
+  width: 100%;
+  src: url("assets/icons/drop-down.png");
+}
+
+.slide button img {
+  /* src: url(); */
+  transform: rotate(180deg);
 }
 
 .contact-section {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 2rem;
-  gap: 1rem;
+  gap: 2rem;
   background-color: #fff;
 }
 
-.contact-section div {
+.contact-section h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  /* font-size: 2rem; */
+}
+
+.contact-section > div:first-of-type {
+  padding-top: 2rem;
   width: 100%;
   max-width: 30rem;
   margin-block: 0.5rem;
@@ -100,7 +131,14 @@ p {
 
 .form-container {
   background-color: #ffc3bd;
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
+  width: 100%;
+  max-width: 35rem;
+  margin-block: 0.5rem;
+}
+
+.form-container div {
+  margin-bottom: 0.5rem;
 }
 
 .contact-section h2 {
@@ -111,7 +149,7 @@ p {
 .form-container input,
 textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   font-family: inherit;
   color: #232946;
   border: 1px solid #232946;
@@ -140,101 +178,4 @@ textarea:focus {
 
 .inline p {
   margin-left: 1.5rem;
-}
-
-footer {
-  background-color: var(--color-main);
-  color: #fff;
-  min-height: 10rem;
-  padding-inline: 3rem;
-  padding-bottom: 1rem;
-}
-
-footer .logo {
-  color: #fff;
-}
-
-footer a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer-first {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid #fff;
-}
-
-footer ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.footer-second {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.footer-second > div {
-  display: flex;
-  /* gap: 2rem; */
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-second > p {
-  /* margin-block: 1rem; */
-  font-size: 0.8rem;
-}
-
-.subscribe-field {
-  position: relative;
-  margin-block: 1rem;
-  margin-left: 1rem;
-}
-
-.subscribe-field input {
-  padding: 0.6rem 1rem;
-  outline: none;
-  font-family: inherit;
-  border-radius: 4px;
-  border: none;
-  width: 15rem;
-}
-
-.subscribe-field button {
-  padding: 0.6rem 0.8rem;
-  border-width: 0;
-  border-radius: 0 4px 4px 0;
-  background-color: var(--pink);
-  position: absolute;
-  right: -1rem;
-  top: -0.5px;
-}
-
-.subscribe-field svg {
-  height: 1rem;
-  fill: #fff;
-}
-
-@media (max-width: 768px) {
-  .contact-section {
-    flex-direction: column;
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer-first {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .footer-first .nav-link {
-    flex-direction: column;
-    gap: 1rem;
-    font-size: clamp(0.8rem, 3vw, 1rem);
-  }
 }
