@@ -96,7 +96,7 @@ p {
   position: absolute;
   top: 0.5rem;
   right: 1rem;
-  fill: var(--pink);
+  background-color: transparent;
 }
 
 button img {
